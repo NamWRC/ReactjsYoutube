@@ -1,0 +1,31 @@
+.youtube-header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+.right-header {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+.nav-control {
+    width: 40px;
+    height: 40px;
+}
+.youtube-logo {
+    width: 120px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 18px 14px 18px 16px;
+}
+.youtube-logo img {
+    color: #fff;
+}
+.center-header {
+    width: 40%;
+    height: 100%;
+}
