@@ -1,10 +1,8 @@
 import React from "react";
 import "./Account.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faEllipsisVertical,
-    faCircleUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
+import Signbutton from "./Signbutton";
 
 const Account = () => {
     return (
@@ -12,12 +10,7 @@ const Account = () => {
             <div className="setting-header">
                 <FontAwesomeIcon icon={faEllipsisVertical}></FontAwesomeIcon>
             </div>
-            <div className="sign-header">
-                <div className="user-icon">
-                    <FontAwesomeIcon icon={faCircleUser}></FontAwesomeIcon>
-                </div>
-                <span>Sign in</span>
-            </div>
+            <Signbutton></Signbutton>
         </div>
     );
 };

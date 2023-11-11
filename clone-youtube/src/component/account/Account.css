@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
 }
-.sign-header {
+.sign-button {
     width: 98px;
     height: 36px;
     color: #3ea6ff;
@@ -30,7 +30,7 @@
     width: 24px;
     height: 24px;
 }
-.sign-header:hover {
+.sign-button:hover {
     background-color: #244157;
 }
 .user-icon svg {
