@@ -1,23 +1,59 @@
 .sidebar {
     width: 240px;
-    height: 100%;
+    height: calc(100vh - 56px);
     display: flex;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
     flex-direction: column;
+    overflow-x: auto;
+    position: fixed;
+    padding-right: 8px;
+    top: 56px;
+    bottom: 0;
+}
+.sidebar::-webkit-scrollbar {
+    width: 9px; /* Chiều rộng của thanh cuộn */
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #0f0f0f;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    display: none;
+}
+.sidebar.hovered::-webkit-scrollbar-thumb {
+    background-color: #606060;
 }
 
 .tab-group {
     padding: 12px;
     border-bottom: 1px solid #424242;
 }
+.tab-group.youtube-service svg {
+    color: red;
+}
+
+.tab-group .group-name {
+    font-size: 16px;
+    height: 32px;
+    width: 100%;
+    padding: 6px 12px 4px;
+    display: flex;
+    align-items: center;
+}
+
 .tab-group.unsigned {
     height: 121px;
     padding: 16px 32px;
-    font-size: 14px;
-    font-weight: 400;
     line-height: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+.tab-group .sign-button {
+    margin-top: 8px;
 }
 .tab-button {
     display: flex;
@@ -25,18 +61,42 @@
     height: 40px;
     width: 204px;
     padding: 0 12px;
-    font-size: 1rem;
-    font-weight: 400;
+    white-space-collapse: collapse;
+    text-overflow: ellipsis;
+    cursor: pointer;
 }
 .tab-icon {
-    padding: 12px 0;
+    padding: 11px 0;
     padding-left: 0;
     padding-right: 0;
     height: 100%;
     width: 24px;
     margin-right: 24px;
 }
+.tab-icon svg {
+    height: 100%;
+}
 .tab-button.tab-active {
     border-radius: 10px;
     background-color: #272727;
+}
+.youtube-link {
+    width: 100%;
+    display: block;
+    padding: 16px 10px 0px 24px;
+}
+.youtube-link a {
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 8px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+}
+.side-footer .footer-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #717171;
+    padding: 16px 24px;
 }

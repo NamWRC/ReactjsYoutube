@@ -9,6 +9,12 @@ import {
     faGamepad,
     faNewspaper,
     faTrophy,
+    faCirclePlus,
+    faBox,
+    faGear,
+    faFlag,
+    faCircleQuestion,
+    faComment,
 } from "@fortawesome/free-solid-svg-icons";
 
 const mainData = [
@@ -58,5 +64,106 @@ const exploreData = [
         name: "Sport",
     },
 ];
+const actionData = [
+    {
+        icon: faCirclePlus,
+        name: "Browse channels",
+    },
+];
 
-export { mainData, sideData, exploreData };
+const youtubeData = [
+    {
+        icon: faBox,
+        name: "Youtube Premium",
+    },
+    {
+        icon: faBox,
+        name: "Youtube Music",
+    },
+    {
+        icon: faBox,
+        name: "Youtube Kids",
+    },
+];
+
+const settingData = [
+    {
+        icon: faGear,
+        name: "Settings",
+    },
+    {
+        icon: faFlag,
+        name: "Report history",
+    },
+    {
+        icon: faCircleQuestion,
+        name: "Help",
+    },
+    {
+        icon: faComment,
+        name: "Send feedback",
+    },
+];
+const aboutData = [
+    {
+        content: "About",
+        path: "",
+    },
+    {
+        content: "Press",
+        path: "",
+    },
+    {
+        content: "Copyright",
+        path: "",
+    },
+    {
+        content: "Contact us",
+        path: "",
+    },
+    {
+        content: "Creators",
+        path: "",
+    },
+    {
+        content: "Advertise",
+        path: "",
+    },
+    {
+        content: "Developers",
+        path: "",
+    },
+];
+const lienceData = [
+    {
+        content: "Terms",
+        path: "",
+    },
+    {
+        content: "Privacy",
+        path: "",
+    },
+    {
+        content: "Policy & Safety",
+        path: "",
+    },
+    {
+        content: "How YouTube works",
+        path: "",
+    },
+    {
+        content: "Test new features",
+        path: "",
+    },
+];
+
+export {
+    mainData,
+    sideData,
+    exploreData,
+    actionData,
+    youtubeData,
+    settingData,
+    aboutData,
+    lienceData,
+};
