@@ -1,3 +1,5 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 *,
 *:before,
 *:after {
@@ -36,6 +38,20 @@ body {
     background-color: #0f0f0f;
     line-height: 1;
     color: #ccc;
+}
+body::-webkit-scrollbar {
+    width: 9px; /* Chiều rộng của thanh cuộn */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #0f0f0f;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    display: none;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #606060;
 }
 
 .App {

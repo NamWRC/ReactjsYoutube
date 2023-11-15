@@ -4,8 +4,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import logo from "../../logo.svg";
 import "./Header.css";
-import Search from "../search/Search";
-import Account from "../account/Account";
+import Search from "./search/Search";
+import Account from "./account/Account";
 const Header = () => {
     return (
         <header className="youtube-header">

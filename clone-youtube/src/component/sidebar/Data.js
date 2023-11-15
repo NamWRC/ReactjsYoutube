@@ -21,24 +21,29 @@ const mainData = [
     {
         icon: faHome,
         name: "Home",
+        path: "",
     },
     {
         icon: faCamera,
         name: "Short",
+        path: "short",
     },
     {
         icon: faFolder,
         name: "Subsciptions",
+        path: "",
     },
 ];
 const sideData = [
     {
         icon: faImagePortrait,
         name: "You",
+        path: "",
     },
     {
         icon: faClockRotateLeft,
         name: "History",
+        path: "",
     },
 ];
 
@@ -46,28 +51,34 @@ const exploreData = [
     {
         icon: faFire,
         name: "Trending",
+        path: "",
     },
     {
         icon: faMusic,
         name: "Music",
+        path: "",
     },
     {
         icon: faGamepad,
         name: "Gaming",
+        path: "",
     },
     {
         icon: faNewspaper,
         name: "News",
+        path: "",
     },
     {
         icon: faTrophy,
         name: "Sport",
+        path: "",
     },
 ];
 const actionData = [
     {
         icon: faCirclePlus,
         name: "Browse channels",
+        path: "",
     },
 ];
 
@@ -75,14 +86,17 @@ const youtubeData = [
     {
         icon: faBox,
         name: "Youtube Premium",
+        path: "",
     },
     {
         icon: faBox,
         name: "Youtube Music",
+        path: "",
     },
     {
         icon: faBox,
         name: "Youtube Kids",
+        path: "",
     },
 ];
 
@@ -90,18 +104,22 @@ const settingData = [
     {
         icon: faGear,
         name: "Settings",
+        path: "",
     },
     {
         icon: faFlag,
         name: "Report history",
+        path: "",
     },
     {
         icon: faCircleQuestion,
         name: "Help",
+        path: "",
     },
     {
         icon: faComment,
         name: "Send feedback",
+        path: "",
     },
 ];
 const aboutData = [

@@ -11,9 +11,14 @@ import {
     lienceData,
 } from "./Data";
 import Tabbutton from "./Tabbutton";
-import Signbutton from "../account/Signbutton";
+import Signbutton from "../header/account/Signbutton";
 const Sidebar = () => {
     const [hovered, setHovered] = useState(true);
+    const [pageName, setPageName] = useState("Home");
+    const handleChangePage = (name) => {
+        console.log(name);
+        setPageName(name);
+    };
     return (
         <div
             className={`sidebar ${hovered ? "hovered" : ""}`}
@@ -26,6 +31,9 @@ const Sidebar = () => {
                         key={index}
                         icon={tab.icon}
                         name={tab.name}
+                        path={tab.path}
+                        pageName={pageName}
+                        callBack={handleChangePage}
                     ></Tabbutton>
                 ))}
             </div>
@@ -34,6 +42,7 @@ const Sidebar = () => {
                     <Tabbutton
                         key={index}
                         icon={tab.icon}
+                        path={tab.path}
                         name={tab.name}
                     ></Tabbutton>
                 ))}
@@ -50,6 +59,7 @@ const Sidebar = () => {
                     <Tabbutton
                         key={index}
                         icon={tab.icon}
+                        path={tab.path}
                         name={tab.name}
                     ></Tabbutton>
                 ))}
@@ -59,6 +69,7 @@ const Sidebar = () => {
                     <Tabbutton
                         key={index}
                         icon={tab.icon}
+                        path={tab.path}
                         name={tab.name}
                     ></Tabbutton>
                 ))}
@@ -71,6 +82,7 @@ const Sidebar = () => {
                     <Tabbutton
                         key={index}
                         icon={tab.icon}
+                        path={tab.path}
                         name={tab.name}
                     ></Tabbutton>
                 ))}
@@ -80,6 +92,7 @@ const Sidebar = () => {
                     <Tabbutton
                         key={index}
                         icon={tab.icon}
+                        path={tab.path}
                         name={tab.name}
                     ></Tabbutton>
                 ))}

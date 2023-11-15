@@ -1,15 +1,23 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-const Tabbutton = ({ icon, name }) => {
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+const Tabbutton = ({ icon, name, path, callBack, pageName }) => {
+    const onChangePage = (name) => {
+        callBack(name);
+    };
     return (
-        <div className="tab-button tab-active">
+        <Link
+            className={`tab-button ${pageName === name ? " tab-active" : ""}`}
+            to={`/${path}`}
+            onClick={() => onChangePage(name)}
+        >
             <div className="tab-icon">
                 <FontAwesomeIcon icon={icon}></FontAwesomeIcon>
             </div>
             <div className="tab-name">
                 <h2>{`${name}`}</h2>
             </div>
-        </div>
+        </Link>
     );
 };
 

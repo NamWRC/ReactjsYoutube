@@ -1,0 +1,18 @@
+.home-content {
+    position: absolute;
+    left: 250px;
+    top: 56px;
+    width: calc(100% - 250px);
+    height: calc(100% - 56px);
+}
+.contents-wraper {
+    width: calc(100% - 32px);
+    /* position: absolute; */
+    top: 56px;
+    margin: 56px 0 0 16px;
+    padding: 24px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,43 @@
+.category {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 56px;
+    background-color: #0f0f0f;
+    z-index: 99;
+}
+.category .slick-arrow {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+    padding: 8px;
+    border-radius: 100rem;
+    z-index: 999;
+}
+.slick-arrow:hover {
+    background-color: #717171;
+}
+.slick-arrow svg {
+    width: 100%;
+    height: 100%;
+}
+.slick-arrow.prev {
+    transform: translate(0, 20%);
+    left: 240px;
+}
+.slick-arrow.next {
+    right: 0;
+    transform: translate(0, -120%);
+}
+.slick-arrow.disable-arrow {
+    display: none;
+}
+.category-tab {
+    height: 32px;
+    width: fit-content !important;
+    margin: 12px 12px 12px 0;
+    background-color: #272727;
+    border-radius: 8px;
+    padding: 0 12px;
+}
